@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Comic Sans;
+  padding: 10px;
+  background: #a9a9a9;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-image: url(dufan.jpg);
+  width: 100%;
+  background-repeat:no-repeat;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color : White;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Website Saya</h1>
+</div>
+
+<div class="topnav">
+  <a href="Index.html">Home</a>
+  <a href="About me.html">Tentang Saya</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact me.html" style="float:right">Contact Me</a>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h2>Kumpulan foto yang sempat saya abadikan</h2>
+      <h4>Tempat Wisata di Bali</h4>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Gunung.jpeg" alt="Gunung Kintamani" width="600" height="400">
+    <div class="desc">Gunung Kintamani</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Pantai Sore.jpeg" alt="Pantai Tanah Lot" width="600" height="400">
+    <div class="desc">Pantai Tanah Lot</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Pantai.jpeg" alt="Pandai Pandawa" width="600" height="400">
+    <div class="desc">Pantai Pandawa</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Patung.jpeg" alt="Patung Kumbakarna Laga" width="600" height="400">
+    <div class="desc">Patung Kumbakarna Laga</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+      <img src="Pura.jpeg" alt="Pura Ulun Danu Baratan" width="600" height="400">
+    <div class="desc">Pura Ulun Danu Baratan</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>Berikut adalah 5 foto yang saya ambil secara langsung ditempat. Foto-foto ini diambil saat saya pergi ke Bali pada tahun 2016. Saya akan mencoba menceritakan sedikit pendapat saya tentang tempat-tempat tersebut.</p> 
+  <p>Foto pertama adalah Gunung kintamani. Kintamani adalah salah satu gunung yang sempat saya kunjungi, udara yang sangat sejuk dengan pemandangan hutan yang luas menjadi pesona gunung ini. Terdapat pemukiman juga didaerah tersebut. Saya rasa, mereka jarang merasakan cuaca gersang atau panas seperti kota Jakarta. Jika menyukai pegunungan dengan suasana sejuk, tempat ini menjadi rekomendasi saya.</p>
+  <p>Tanah Lot menjadi tempat wisata kedua dari foto saya. Tanah Lot merupakan salah satu tempat wisata yang paling gerkenal di Bali. Dengan keindahan pantai dan puranya, membuat tempat tersebut sebagai pilihan wisata di Bali. Saya pergi ke Tanah Lot saat hari sedang sore menjelang malam. Nuansa pantai sore dengan matahari terbenam menjadi tempat yang sangat fotogenik. Sayangnya, karena terlalu mengagumi keindahan momen matahari terbenam atau Sunset saat itu membuat saya lupa mengambil gambar pura Tanah Lot dan juga keadaan pantai saat itu sedang air pasang yang membuat kunjungan ke pura tidak diperbolehkan karena dapat membahayakan keselamatan pengunjung.</p>
+  <p>Ketiga adalah Pantai Pandawa, salah satu pantai yang berada di Bali. Pantai ini memiliki pemandangan yang sangat "bersih". Seperti yang terlihat pada gambar, Apalagi cuaca yang cerah dengan pasir pantai yang berwarna putih, membuat pantai ini sangat mencolok. Pantai ini juga salah satu pantai yang tergolong cukup bersih. Saat saya pergi kesana, pantai ini tidak tercemari oleh banyak sampah. Saya cukup merekomendasikan untuk pergi kesana</p>
+  <p>Keempat adalah Patung Kumbakarna Laga. Merupakan salah satu patung yang terkenal juga di Bali. Walau tidak banyak yang bisa dilihat dan dinikmati disini, tetapi jika memang memiliki banyak waktu luang tempat ini bisa juga dikunjungi. Walau tidak seterkenal Garuda Wisnu Kencana (GWK), tempat ini masih cukup fotogenik dan cuaca disana juga cukup sejuk.</p>
+  <p>Yang terakhir adalah Pura Ulun Danu Baratan. Pura adalah tempat ibadah suci untuk umat Hindu. Sekali lagi, pemandangan dari tempat ini tidak bisa diabaikan yang membuat tempat ini sangat fotogenik juga. Dengan kondisi yang ramai tapi teratur membuat tempat ini menjadi rekomendasi wisatawan. Dengan berbagai fasilitas yang dapat digunakan didaerah sekitar seperti perahu angsa dan memancing bila saya tidak salah ingat. 
+</div>
+
+    </div>
+</div>
+<div class="footer">
+  <p>Pemilik: 12180277 - Fersan Gamas<br>
+  <a href="mailto:fersangamas777@gmail.com">fersangamas777@gmail.com</a></p>
+  <a href="https://www.instagram.com/fersann_/"><img src="IG.png" width="50" height="50"></a>
+  <a href="https://www.facebook.com/fersan.gamas1/"><img src="facebook.png" width="50" height="50"></a>
+</div>
+
+</body>
+</html>

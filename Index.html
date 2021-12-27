@@ -1,0 +1,145 @@
+	<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage Websiteku</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Comic Sans;
+  padding: 10px;
+  background: #a9a9a9;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  text-align: center;
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Website Saya</h1>
+</div>
+
+<div class="topnav">
+  <a href="Index.html">Home</a>
+  <a href="About me.html">Tentang Saya</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact me.html" style="float:right">Contact Me</a>
+</div>
+
+<div class="row">
+  <div class="middlecolumn">
+    <div class="card">
+      <h2>Siapa Saya?</h2>
+      <h5> Seorang laki-laki yang pernah memiliki kesempatan untuk pergi ke Bali saat liburan sebelum pandemi COVID-19</h5>
+      <div class="fakeimg" style="height:500px;"><img src="Pantai.jpeg" width="400" height="300"</div>
+      <p>Salah satu Pantai di Bali</p>
+      <p>Website ini berisikan tentang pengalaman-pengalaman yang saya rasakan selama saya pergi ke Bali. Bali merupakan salah satu kota dengan tempat wisata yang sangat terkenal sampai ke luar negeri. Bali juga merupakan kota yang paling dikenal oleh warga negara Asing bahkan sampai ada yang berkata kalau Indonesia terletak didalam Bali. Kota ini juga merupakan kota yang cukup "sakral" sehingga harus menjaga etika ketika berada disana. Menurut saya, sebagai orang yang tinggal di Indonesia. Bali merupakan kota yang harus dikunjungi paling tidak sekali jika ingin pergi berwisata. Banyak tempat yang sangat menyenangkan mulai dari pantai, gunung, pulau, pura dan lainnya.</p>
+    </div>
+    </div>
+
+  <div class="middlecolumn">
+    <div class="card">
+      <h2>Info Saya</h2>
+      <div class="fakeimg" style="height:600px;"><img src="A1.jpg" width="400" height="500"</div>
+      <p>Seorang laki-laki yang masih menjadi mahasiswa dan telah berusia 21 tahun dengan memiliki berbagai macam hal yang disukai. Saya juga ingin belajar bahasa negara asing, yaitu Rusia dan Jepang. Olahraga favorit saya adalah bulu tangkis walau saya tidak terlalu handal dalam olahraga itu. Saya juga menyukai musik karena membuat perasaan tenang dan lebih rileks. Pada website ini, saya ingin memberikan beberapa rekomendasi tempat wisata yang ada di Bali berdasarkan pendapat saya pribadi.</p>
+    </div>
+      </div>
+</div>
+
+<div class="footer">
+  <p>Pemilik: 12180277 - Fersan Gamas<br>
+  <a href="mailto:fersangamas777@gmail.com">fersangamas777@gmail.com</a></p>
+  <a href="https://www.instagram.com/fersann_/"><img src="IG.png" width="50" height="50"></a>
+  <a href="https://www.facebook.com/fersan.gamas1/"><img src="facebook.png" width="50" height="50"></a>
+</div>
+
+</body>
+</html>

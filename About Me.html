@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Comic Sans;
+  padding: 10px;
+  background: #a9a9a9;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-image: url(dufan.jpg);
+  width: 100%;
+  background-repeat:no-repeat;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, 
+make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+</div>
+
+<div class="topnav">
+  <a href="Index.html">Home</a>
+  <a href="About me.html">Tentang Saya</a>
+  <a href="Gallery.html">Gallery</a>
+  <a href="Contact me.html" style="float:right">Contact Me</a>
+</div>
+
+<div class="row">
+    <div class="card">
+      <h2 style="text-align:center">Profil Saya</h2>
+
+      <div class="row">
+        <div class="column">
+          <div class="card2">
+            <img src="Hobby.jpg" alt="Hobby" style="width:100%">
+            <div class="container">
+              <h1>Hobi Saya:</h1>            
+	    <ol type="I">
+                <li>Traveling</li>
+                <li>Hang out</li>
+                <li>Membaca</li>
+                <li>Relaxing Time</li>
+            </ol>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card2">
+            <img src="Makanan.jpg" alt="Makanan" style="width:100%">
+            <div class="container">
+              <h1>Makanan Favorit:</h1>
+            <ul type="disc">
+                <li>Rendang</li>
+                <li>Nasi Bebek</li>
+                <li>Nasi Goreng</li>
+                <li>Nasi Uduk</li>
+                <li>Sate Ayam</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card2">
+            <img src="Minuman.jpg" alt="Minuman" style="width:100%">
+            <div class="container">
+              <h1>Minuman Favorit:</h1>
+            <ol type="I">
+                <li>Es Teh Manis</li>
+                <li>Es Teh Lemon</li>
+                <li>Kopi</li>
+	        <li>Jus</li>
+            </ol>
+            </div>
+          </div>
+        </div>
+
+	<div class="clearfix"></div>
+
+        <div class="row">
+          <div class="column">
+            <div class="card2">
+              <img src="Warna.jpg" alt="Warna" style="width:100%">
+              <div class="container">
+              <h1>Warna Favorit:</h1>
+            <ol type="I">
+                <li>Biru</li>
+                <li>Hitam</li>
+                <li>Putih</li>
+	        <li>Oranye</li>
+            </ol>
+            </div>
+          </div>
+        </div>
+
+       	  <div class="column">
+            <div class="card2">
+              <img src="Hewan.jpg" alt="Hewan" style="width:100%">
+              <div class="container">
+              <h1>Hewan Favorit</h1>
+	      <p>Maksud saya hewan favorit disini adalah hewan-hewan yang memiliki penampilan dan paras yang menawan dan enak dilihat menurut saya. Beberapa hewan tersebut adalah:</p>
+	    <ul type="disc">
+                <li>Kucing</li>
+                <li>Anjing</li>
+                <li>Rubah</li>
+                <li>Orca</li>
+                <li>Serigala Arktik</li>
+            </ul>
+              </div>
+            </div>
+          </div>
+
+       	  <div class="column">
+            <div class="card2">
+              <img src="Negara.jpg" alt="Negara" style="width:100%">
+              <div class="container">
+              <h1>Negara yang Ingin dikunjungi</h1>
+	      <p>Negara-negara yang ingin saya kunjungi adalah kumpulan negara yang sekaligus saya sukai juga bahasanya. Namun saya belum memiliki kesempatan untuk pergi kenegara-negara tersebut. Negara-negara tersebut adalah:</p>
+	    <ul type="disc">
+                <li>Rusia</li>
+                <li>Korea</li>
+                <li>Jepang</li>
+                <li>Paris</li>
+            </ul>
+               </div>
+              </div>
+            </div>
+          </div>
+
+<div class="footer">
+  <p>Pemilik: 12180277 - Fersan Gamas<br>
+  <a href="mailto:fersangamas777@gmail.com">fersangamas777@gmail.com</a></p>
+  <a href="https://www.instagram.com/fersann_/"><img src="IG.png" width="50" height="50"></a>
+  <a href="https://www.facebook.com/fersan.gamas1/"><img src="facebook.png" width="50" height="50"></a>
+</div>
+
+</body>
+</html>
+
+
